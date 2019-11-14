@@ -1,0 +1,48 @@
+%right{
+  display: inline-block;
+  text-align: right;
+}
+
+$color: white;
+
+div{
+  .col-2{
+    @extend %right;
+    padding-right: 0;
+  }
+}
+
+#left-btn{
+  float: left;
+}
+
+#right-btn{
+  float: right;
+}
+
+th{
+  text-align: center;
+}
+
+@media print {
+    #left-btn, #right-btn {
+        display: none;
+    }
+}
+
+body {
+  background-color: $color;
+  color: black;
+}
+
+/* On screens that are 992px wide or less, the background color is blue */
+@media screen and (max-width: 500px) {
+  body {
+    background-color: black;
+    color: white;
+  }
+
+  hr{
+    border: 1px solid $color;
+  }
+}

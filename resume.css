@@ -1,0 +1,51 @@
+div .col-2 {
+  display: inline-block;
+  text-align: right;
+}
+
+div .col-2 {
+  padding-right: 0;
+}
+
+#left-btn {
+  float: left;
+}
+
+#right-btn {
+  float: right;
+}
+
+th {
+  text-align: center;
+}
+
+.rounded-circle{
+  float: right;
+  }
+
+@media print {
+  #left-btn, #right-btn {
+    display: none;
+  }
+}
+body {
+  background-color: white;
+  color: black;
+}
+
+/* On screens that are 992px wide or less, the background color is blue */
+@media screen and (max-width: 500px) {
+  body {
+    background-color: black;
+    color: white;
+  }
+
+  .rounded-circle{
+    width: 30%;
+    float: right;
+  }
+
+  hr {
+    border: 1px solid white;
+  }
+}
